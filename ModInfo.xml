@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="kanaverum-renewable-loot" />
+    <DisplayName value="Renewable Loot" />
+    <Version value="1.0.0" />
+    <Description value="Keep many containers from breaking when they are looted." />
+    <Author value="Jonathan Robertson (Kanaverum)" />
+    <Website value="https://github.com/jonathan-robertson/renewable-loot" />
+</xml>
