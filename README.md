@@ -1,6 +1,6 @@
 # Renewable Loot
 
-[![🧪 Tested On 7DTD 1.1 (b14)](https://img.shields.io/badge/🧪%20Tested%20On-7DTD%201.1%20(b14)-blue.svg)](https://7daystodie.com/) [![📦 Automated Release](https://github.com/jonathan-robertson/renewable-loot/actions/workflows/release.yml/badge.svg)](https://github.com/jonathan-robertson/renewable-loot/actions/workflows/release.yml)
+[![🧪 Tested On 7DTD 1.1 (b14)](https://img.shields.io/badge/🧪%20Tested%20On-7DTD%201.1%20(b14)-blue.svg)](https://7daystodie.com/) [![📦 Automated Release](https://github.com/jonathan-robertson/respawning-loot/actions/workflows/release.yml/badge.svg)](https://github.com/jonathan-robertson/respawning-loot/actions/workflows/release.yml)
 
 - [Renewable Loot](#renewable-loot)
   - [Summary](#summary)
