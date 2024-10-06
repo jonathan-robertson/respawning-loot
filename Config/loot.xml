@@ -1,3 +1,14 @@
 <config>
-    <removeattribute xpath="/lootcontainers/lootcontainer[@name='birdNest' or @name='junk' or @name='trashShelves' or @name='shamwayShelves' or @name='popnpillsShelves' or @name='mopowerShelves' or @name='weaponsBagLarge' or @name='weaponsBagSmall' or @name='militaryShelves' or @name='clothesRacks' or @name='armorRack' or @name='gunRack' or @name='bookPile' or @name='singleBooks' or @name='crackabookShelves' or @name='coolerMedical' or @name='medicalPillCase' or @name='medicalPileSmall' or @name='medicalPileMedium' or @name='medicalPileLarge' or @name='liquorPileSmall' or @name='liquorPileMed' or @name='liquorPileLarge' or @name='chemPileSmall' or @name='chemPileMed' or @name='chemPileLarge' or @name='foodPileSmall' or @name='foodPileMed' or @name='foodPileLarge' or @name='ammoPileSmall' or @name='ammoPileMed' or @name='ammoPileLarge']/@destroy_on_close" />
+    <!-- Remove destroy_on_close logic on all containers except for:
+        - @name='playerBackpack': 1
+        - @name='buriedTreasure': 1
+        - @name='airDrop': 1
+        - @name='questRewardSkillMagazines': 1
+        - contains(@name, 'infested'): 5
+        - contains(@name, 'twitch'): 66
+
+        * counts are accurate as of 7DTD 1.1 (b14): 161 w/ destroy_on_close - 75 to exclude = 86 loot containers will no longer trigger destroy_on_close *
+    -->
+
+    <removeattribute xpath="/lootcontainers/lootcontainer[not (@name='playerBackpack') and not (@name='buriedTreasure') and not (@name='airDrop') and not (@name='questRewardSkillMagazines') and not (contains(@name, 'infested')) and not (contains(@name, 'twitch'))]/@destroy_on_close" />
 </config>
