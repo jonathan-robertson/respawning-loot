@@ -1,7 +1,8 @@
 <config>
     <!-- Remove destroy_on_close logic on all containers except for:
         - @name='playerBackpack': 1
-        - @name='buriedTreasure': 1
+        - contains(@name, 'buried'): 1  [including as 'contains' for compatibility with some other mods]
+        - contains(@name, 'Buried'): 0  [including for compatibility with some other mods]
         - @name='airDrop': 1
         - @name='questRewardSkillMagazines': 1
         - contains(@name, 'infested'): 5
@@ -10,5 +11,5 @@
         * counts are accurate as of 7DTD 1.1 (b14): 161 w/ destroy_on_close - 75 to exclude = 86 loot containers will no longer trigger destroy_on_close *
     -->
 
-    <removeattribute xpath="/lootcontainers/lootcontainer[not (@name='playerBackpack') and not (@name='buriedTreasure') and not (@name='airDrop') and not (@name='questRewardSkillMagazines') and not (contains(@name, 'infested')) and not (contains(@name, 'twitch'))]/@destroy_on_close" />
+    <removeattribute xpath="/lootcontainers/lootcontainer[not (@name='playerBackpack') and not (contains(@name, 'buried')) and not (contains(@name, 'Buried')) and not (@name='airDrop') and not (@name='questRewardSkillMagazines') and not (contains(@name, 'infested')) and not (contains(@name, 'twitch'))]/@destroy_on_close" />
 </config>
